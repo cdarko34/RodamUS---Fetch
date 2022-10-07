@@ -1,3 +1,26 @@
+const listaPaquetes = document.querySelector('#lista');
+
+fetch('data.json')
+    .then ( (res) => res.json() )
+    .then( (data) => {
+        data.forEach( (paquete) => {
+            const li = document.createElement('li');
+            li.innerHTML = `
+            <h4>${paquete.titulo}</h4>
+            <p>${paquete.preio}</p>
+            <hr/>
+            `
+
+            listaPaquetes.appendChild('li');
+        } )
+
+    })
+
+;
+
+
+
+
 class Registro {
     empezarRegistro(nombre, telefono, zip, email, confirmarCorreo){
         const infoRegistro = {
