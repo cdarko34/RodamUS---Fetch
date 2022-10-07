@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0; }
+
+
+body{
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #D42027;
+}
+
+.paquete{
+    width: 50%;
+    padding: 1em;
+}
+
+.entrada-piezas{
+    text-align: center;
+    width: 30%;
+}
